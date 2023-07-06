@@ -913,10 +913,10 @@
   background-image: url(../images/phpblog.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-position-y: center;
-  width: 43vh;
-  height: 100vh;
+  width: 50vh;
+  height: 50vh;
   border-radius: 10px;
   /* position: absolute;
   top: 0; */
@@ -986,10 +986,10 @@
   background-image: url(../images/phpteam.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-position-y: center;
-  width: 43vh;
-  height: 100vh;
+  width: 50vh;
+  height: 50vh;
   border-radius: 10px;
   /* position: absolute;
   top: 0; */
@@ -1121,10 +1121,10 @@
   bottom: 0;
 }
 #section14 .section14__imgbox .img1 {
-  background-image: url(../images/phpblog.png);
+  background-image: url(../images/reactsite.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-position-y: center;
   width: 43vh;
   height: 100vh;
@@ -1194,13 +1194,13 @@
   bottom: 0;
 }
 #section15 .section15__imgbox .img1 {
-  background-image: url(../images/phpteam.png);
+  background-image: url(../images/reactapi.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-position-y: center;
-  width: 43vh;
-  height: 100vh;
+  width: 50vh;
+  height: 55vh;
   border-radius: 10px;
   /* position: absolute;
   top: 0; */
@@ -1268,13 +1268,13 @@
   bottom: 0;
 }
 #section15-2 .section15-2__imgbox .img1 {
-  background-image: url(../images/phpteam.png);
+  background-image: url(../images/nextjs.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-position-y: center;
-  width: 43vh;
-  height: 100vh;
+  width: 55vh;
+  height: 50vh;
   border-radius: 10px;
   /* position: absolute;
   top: 0; */
