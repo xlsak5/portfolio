@@ -324,31 +324,31 @@
 #section3 .bottom__desc img {}
 #section3 .bottom__desc h2 {
   position: absolute;
-  bottom: 2vw;
-  right: -86vw;
+  bottom: 0.6vw;
+  right: -69vw;
   color: #60AF3A;
-  font-size: 5.2vw;
+  font-size: 3vw;
   line-height: 0.5;
   font-family: 'Major Mono Display', monospace;
 }
 #section3 .bottom__desc p {
   position: absolute;
-  bottom: -10.5vw;
-  right: -91vw;
+  bottom: -6.5vw;
+  right: -92vw;
   color: #000;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   margin: 0.4vw 0;
   width: 47vw;
 }
 #section3 .bottom__desc a {
   position: absolute;
-  bottom: -15vw;
-  right: -55.5vw;
+  bottom: -10vw;
+  right: -54.5vw;
   display: inline-block;
   color: #60AF3A;
   border: 1px solid #60AF3A;
-  padding: 0.5vw 3.4vw;
-  font-size: 1.5vw;
+  padding: 0.5vw 3vw;
+  font-size: 1vw;
   font-family: 'Major Mono Display', monospace;
   transition: all 0.3s;
 }
