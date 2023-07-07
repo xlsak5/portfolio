@@ -2369,6 +2369,62 @@ progress::-moz-progress-bar {
 }
 
 
+
+
+/* 스크롤 CSS */
+/* 스크롤바 트랙 배경 색상 */
+body::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.1); /* 원하는 배경 색상으로 변경 */
+}
+
+/* 스크롤바 색상 */
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* 마우스 오버 시 스크롤바 색상 */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+body::-webkit-scrollbar {
+  /* display: none; */
+  /* background-color: rgba(0,0,0,0.3); */
+}
+/* 수직 스크롤바 */
+body::-webkit-scrollbar-vertical {
+  width: 10px;
+}
+
+/* 수평 스크롤바 */
+body::-webkit-scrollbar-horizontal {
+  height: 10px;
+}
+/* 스크롤바 조정 */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* 스크롤바 트랙 조정 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* 스크롤바 조정 */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* 마우스 오버 시 스크롤바 조정 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+
+
 /* gsap */
 /* .split {
   transform-style: preserve-3d;
