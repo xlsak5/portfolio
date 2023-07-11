@@ -90,7 +90,7 @@
 
 #header {
   position: fixed;
-  top: 50%;
+  top: 50% !important;
   left: 20px;
   background-color: #0000005a;
   backdrop-filter: blur(10px);
