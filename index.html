@@ -564,655 +564,655 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <!-- script111 -->
-    <!-- <script src="./src/js/imagesloaded.pkgd.min.js"></script>
-    <script src="./src/js/jquery.min_1.12.4.js"></script> -->
+    <script defer src="./src/js/imagesloaded.pkgd.min.js"></script>
+    <script defer src="./src/js/jquery.min_1.12.4.js"></script>
     <!-- 화면 넘겨줌 -->
-    <!-- <script src="./src/js/jquery-ui.min.js"></script>
-    <script src="./src/js/custom7.js"></script> -->
+    <script defer src="./src/js/jquery-ui.min.js"></script>
+    <script defer src="./src/js/custom7.js"></script>
 
     <!-- script222 -->
-    <script defer src="../public/assets/js/imagesloaded.pkgd.min.js"></script>
-    <scrip defert src="../public/assets/js/jquery.min_1.12.4.js">
-      </script>
-      <!-- 화면 넘겨줌 -->
-      <script defer src="../public/assets/js/jquery-ui.min.js"></script>
-      <script defer src="../public/assets/js/custom7.js">
-      </script>
-      <script>
-        {
-          // SCRIPT CODE 
-          const horizon = document.querySelector("#horizontality");
-          const section = gsap.utils.toArray("#horizontality > section");
+    <!-- <script defer src="../public/assets/js/imagesloaded.pkgd.min.js"></script>
+    <scrip defert src="../public/assets/js/jquery.min_1.12.4.js"> -->
+    </script>
+    <!-- 화면 넘겨줌 -->
+    <!-- <script defer src="../public/assets/js/jquery-ui.min.js"></script> -->
+    <!-- <script defer src="../public/assets/js/custom7.js"> -->
+    </script>
+    <script>
+      {
+        // SCRIPT CODE 
+        const horizon = document.querySelector("#horizontality");
+        const section = gsap.utils.toArray("#horizontality > section");
 
-          // PHP CODE
-          const horizon22 = document.querySelector("#horizontality2");
-          const section22 = gsap.utils.toArray("#horizontality2 > section");
+        // PHP CODE
+        const horizon22 = document.querySelector("#horizontality2");
+        const section22 = gsap.utils.toArray("#horizontality2 > section");
 
-          // REACT CODE
-          const horizon33 = document.querySelector("#horizontality3");
-          const section33 = gsap.utils.toArray("#horizontality3 > section");
+        // REACT CODE
+        const horizon33 = document.querySelector("#horizontality3");
+        const section33 = gsap.utils.toArray("#horizontality3 > section");
 
-          const introText = document.querySelectorAll("#section2 .me__introduce span");
-          const section2 = document.querySelector("#section2");
-
-
-          let scrollTween = gsap.to(section, {
-            xPercent: -100 * (section.length - 1),
-            ease: "none",
-            scrollTrigger: {
-              trigger: horizon,
-              start: "top top",
-              end: () => "+=" + (horizon.offsetWidth - innerWidth),
-              pin: true,
-              // pin효과 부드럽게 해줌
-              anticipatePin: 1,
-              scrub: 1,
-              // 화면 자동 이동시켜줌.
-              // snap: {
-              //   snapTo: 1 / (section.length - 1),
-              //   inertia: false,
-              //   duration: {
-              //     min: 0.1,
-              //     max: 0.1
-              //   }
-              // },
-              invalidateOnRefresh: true,
-            }
-          });
-
-          // script 이미지 회전 애니메이션(1번째 view)
-          // .img5, .img52
-          gsap.to(".img5", {
-            rotation: 30,
-            borderRadius: 200,
-            duration: 3,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img5",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img5",
-            }
-          });
-
-          gsap.to(".img52", {
-            rotation: -30,
-            borderRadius: 200,
-            duration: 3,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img52",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img52",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(2번째 view)
-          // .img6
-          gsap.to(".img6", {
-            opacity: 0.5,
-            rotation: 360,
-            borderRadius: 200,
-            duration: 3,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img6",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img6",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(3번째 view)
-          // .img7
-          gsap.to(".img7", {
-            borderRadius: 200,
-            x: 450,
-            opacity: 0.2,
-            duration: 3,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img7",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img7",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(3번째 view)
-          // .img8
-          gsap.to(".img8", {
-            x: 450,
-            borderRadius: 200,
-            rotation: 30,
-            opacity: 0.2,
-            duration: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img8",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img8",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(4번째 view)
-          // .img9
-          gsap.to(".img9", {
-            y: 300,
-            scale: 1,
-            opacity: 0.1,
-            duration: 10,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img9",
-              containerAnimation: scrollTween,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img9",
-            }
-          });
-
-          let scrollTween2 = gsap.to(section22, {
-            xPercent: -100 * (section22.length - 1),
-            ease: "none",
-            scrollTrigger: {
-              trigger: horizon22,
-              start: "top top",
-              end: () => "+=" + (horizon22.offsetWidth - innerWidth),
-              pin: true,
-              // pin효과 부드럽게 해줌
-              anticipatePin: 1,
-              scrub: 1,
-              // 화면 자동 이동시켜줌.
-              // snap: {
-              //   snapTo: 1 / (section.length - 1),
-              //   inertia: false,
-              //   duration: {
-              //     min: 0.1,
-              //     max: 0.1
-              //   }
-              // },
-              invalidateOnRefresh: true,
-            }
-          });
-
-          // script 이미지 회전 애니메이션(6번째 view)
-          // .img11
-          gsap.to(".img11", {
-            opacity: 1,
-            duration: 10,
-            rotation: 16,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img11",
-              containerAnimation: scrollTween2,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img11",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(7번째 view)
-          // .img12
-          gsap.to(".img12", {
-            y: 300,
-            scale: 1,
-            opacity: 0.3,
-            duration: 10,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img12",
-              containerAnimation: scrollTween2,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img12",
-            }
-          });
-
-          let scrollTween3 = gsap.to(section33, {
-            xPercent: -100 * (section33.length - 1),
-            ease: "none",
-            scrollTrigger: {
-              trigger: horizon33,
-              start: "top top",
-              end: () => "+=" + (horizon33.offsetWidth - innerWidth),
-              pin: true,
-              // pin효과 부드럽게 해줌
-              anticipatePin: 1,
-              scrub: 1,
-              // 화면 자동 이동시켜줌.
-              // snap: {
-              //   snapTo: 1 / (section.length - 1),
-              //   inertia: false,
-              //   duration: {
-              //     min: 0.1,
-              //     max: 0.1
-              //   }
-              // },
-              invalidateOnRefresh: true,
-            }
-          });
-
-          // script 이미지 회전 애니메이션(9번째 view)
-          // .img14
-          gsap.to(".img14", {
-            rotation: 30,
-            duration: 10,
-            opacity: 0.2,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img14",
-              containerAnimation: scrollTween3,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img14",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(9번째 view)
-          // .img15
-          gsap.to(".img15", {
-            x: 300,
-            scale: 0.2,
-            opacity: 0.3,
-            duration: 10,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img15",
-              containerAnimation: scrollTween3,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: "img15",
-            }
-          });
-
-          // script 이미지 회전 애니메이션(9번째 view)
-          // .img15-2
-          gsap.to(".img15-2", {
-            y: 300,
-            scale: 1,
-            opacity: 0.3,
-            duration: 10,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".img15-2",
-              containerAnimation: scrollTween3,
-              start: "center 80%",
-              end: "center 20%",
-              // 들어왔다가 / 나갔다가 (반복)
-              scrub: true,
-              markers: false,
-              id: ".img15-2",
-            }
-          });
+        const introText = document.querySelectorAll("#section2 .me__introduce span");
+        const section2 = document.querySelector("#section2");
 
 
+        let scrollTween = gsap.to(section, {
+          xPercent: -100 * (section.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: horizon,
+            start: "top top",
+            end: () => "+=" + (horizon.offsetWidth - innerWidth),
+            pin: true,
+            // pin효과 부드럽게 해줌
+            anticipatePin: 1,
+            scrub: 1,
+            // 화면 자동 이동시켜줌.
+            // snap: {
+            //   snapTo: 1 / (section.length - 1),
+            //   inertia: false,
+            //   duration: {
+            //     min: 0.1,
+            //     max: 0.1
+            //   }
+            // },
+            invalidateOnRefresh: true,
+          }
+        });
 
-          gsap.to(introText, {
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-              trigger: "introText",
-              containerAnimation: scrollTween,
-              toggleActions: "play none reverse none",
-            }
-          })
+        // script 이미지 회전 애니메이션(1번째 view)
+        // .img5, .img52
+        gsap.to(".img5", {
+          rotation: 30,
+          borderRadius: 200,
+          duration: 3,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img5",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img5",
+          }
+        });
 
-          gsap.to(".img4", {
-            y: -200,
-            duration: 2,
-            ease: "elastic",
-            scrollTrigger: {
-              trigger: ".img4",
-              containerAnimation: scrollTween,
-              start: "left center",
-              // 들어왔다가 / 나갔다가 (반복)
-              toggleActions: "play none reverse none",
-              markers: false,
-              pin: false,
-              id: "img4",
-            }
-          });
+        gsap.to(".img52", {
+          rotation: -30,
+          borderRadius: 200,
+          duration: 3,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img52",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img52",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(2번째 view)
+        // .img6
+        gsap.to(".img6", {
+          opacity: 0.5,
+          rotation: 360,
+          borderRadius: 200,
+          duration: 3,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img6",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img6",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(3번째 view)
+        // .img7
+        gsap.to(".img7", {
+          borderRadius: 200,
+          x: 450,
+          opacity: 0.2,
+          duration: 3,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img7",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img7",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(3번째 view)
+        // .img8
+        gsap.to(".img8", {
+          x: 450,
+          borderRadius: 200,
+          rotation: 30,
+          opacity: 0.2,
+          duration: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img8",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img8",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(4번째 view)
+        // .img9
+        gsap.to(".img9", {
+          y: 300,
+          scale: 1,
+          opacity: 0.1,
+          duration: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img9",
+            containerAnimation: scrollTween,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img9",
+          }
+        });
+
+        let scrollTween2 = gsap.to(section22, {
+          xPercent: -100 * (section22.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: horizon22,
+            start: "top top",
+            end: () => "+=" + (horizon22.offsetWidth - innerWidth),
+            pin: true,
+            // pin효과 부드럽게 해줌
+            anticipatePin: 1,
+            scrub: 1,
+            // 화면 자동 이동시켜줌.
+            // snap: {
+            //   snapTo: 1 / (section.length - 1),
+            //   inertia: false,
+            //   duration: {
+            //     min: 0.1,
+            //     max: 0.1
+            //   }
+            // },
+            invalidateOnRefresh: true,
+          }
+        });
+
+        // script 이미지 회전 애니메이션(6번째 view)
+        // .img11
+        gsap.to(".img11", {
+          opacity: 1,
+          duration: 10,
+          rotation: 16,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img11",
+            containerAnimation: scrollTween2,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img11",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(7번째 view)
+        // .img12
+        gsap.to(".img12", {
+          y: 300,
+          scale: 1,
+          opacity: 0.3,
+          duration: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img12",
+            containerAnimation: scrollTween2,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img12",
+          }
+        });
+
+        let scrollTween3 = gsap.to(section33, {
+          xPercent: -100 * (section33.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: horizon33,
+            start: "top top",
+            end: () => "+=" + (horizon33.offsetWidth - innerWidth),
+            pin: true,
+            // pin효과 부드럽게 해줌
+            anticipatePin: 1,
+            scrub: 1,
+            // 화면 자동 이동시켜줌.
+            // snap: {
+            //   snapTo: 1 / (section.length - 1),
+            //   inertia: false,
+            //   duration: {
+            //     min: 0.1,
+            //     max: 0.1
+            //   }
+            // },
+            invalidateOnRefresh: true,
+          }
+        });
+
+        // script 이미지 회전 애니메이션(9번째 view)
+        // .img14
+        gsap.to(".img14", {
+          rotation: 30,
+          duration: 10,
+          opacity: 0.2,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img14",
+            containerAnimation: scrollTween3,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img14",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(9번째 view)
+        // .img15
+        gsap.to(".img15", {
+          x: 300,
+          scale: 0.2,
+          opacity: 0.3,
+          duration: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img15",
+            containerAnimation: scrollTween3,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: "img15",
+          }
+        });
+
+        // script 이미지 회전 애니메이션(9번째 view)
+        // .img15-2
+        gsap.to(".img15-2", {
+          y: 300,
+          scale: 1,
+          opacity: 0.3,
+          duration: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".img15-2",
+            containerAnimation: scrollTween3,
+            start: "center 80%",
+            end: "center 20%",
+            // 들어왔다가 / 나갔다가 (반복)
+            scrub: true,
+            markers: false,
+            id: ".img15-2",
+          }
+        });
+
+
+
+        gsap.to(introText, {
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: "introText",
+            containerAnimation: scrollTween,
+            toggleActions: "play none reverse none",
+          }
+        })
+
+        gsap.to(".img4", {
+          y: -200,
+          duration: 2,
+          ease: "elastic",
+          scrollTrigger: {
+            trigger: ".img4",
+            containerAnimation: scrollTween,
+            start: "left center",
+            // 들어왔다가 / 나갔다가 (반복)
+            toggleActions: "play none reverse none",
+            markers: false,
+            pin: false,
+            id: "img4",
+          }
+        });
+      }
+
+      // 1번쨰 앵무새(PORTFOLIO)
+      {
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+          // console.log(e)
+        })
+
+        function raf(time) {
+          lenis.raf(time)
+          requestAnimationFrame(raf)
         }
 
-        // 1번쨰 앵무새(PORTFOLIO)
-        {
-          const lenis = new Lenis()
+        requestAnimationFrame(raf)
 
-          lenis.on('scroll', (e) => {
-            // console.log(e)
-          })
+        // 메인
+        const targets = gsap.utils.toArray(".split");
 
-          function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-          }
+        let SplitClient = new SplitType(targets, { type: "lines, words, chars" });
 
-          requestAnimationFrame(raf)
+        gsap.set("#webgl-canvas", { autoAlpha: 0 })
+        gsap.set("#section1 .text .t1 .char", { autoAlpha: 0, y: 20 })
+        gsap.set("#section1 .text .t2 .char", { autoAlpha: 0, y: 20 })
+        gsap.set("#section1 .text .t3 .char", { autoAlpha: 0, y: 20 })
+        gsap.set("#section1 .text .t4 .char", { autoAlpha: 0, y: 20 })
+        gsap.set("#header", { autoAlpha: 0 })
+        gsap.set("#section1", { autoAlpha: 0 })
 
-          // 메인
-          const targets = gsap.utils.toArray(".split");
-
-          let SplitClient = new SplitType(targets, { type: "lines, words, chars" });
-
-          gsap.set("#webgl-canvas", { autoAlpha: 0 })
-          gsap.set("#section1 .text .t1 .char", { autoAlpha: 0, y: 20 })
-          gsap.set("#section1 .text .t2 .char", { autoAlpha: 0, y: 20 })
-          gsap.set("#section1 .text .t3 .char", { autoAlpha: 0, y: 20 })
-          gsap.set("#section1 .text .t4 .char", { autoAlpha: 0, y: 20 })
-          gsap.set("#header", { autoAlpha: 0 })
-          gsap.set("#section1", { autoAlpha: 0 })
-
-          setTimeout(() => {
-            let tl = gsap.timeline();
-            // duration:4
-            tl.to("#section1", { duration: 3, autoAlpha: 1 })
-            // duration:2
-            tl.to("#webgl-canvas", { duration: 1.5, autoAlpha: 1 })
-            tl.to("#section1 .text .t1 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
-            tl.to("#section1 .text .t2 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
-            tl.to("#section1 .text .t3 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
-            tl.to("#section1 .text .t4 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
-            tl.to("#header", { autoAlpha: 1 })
-          }, 2000);
+        setTimeout(() => {
+          let tl = gsap.timeline();
+          // duration:4
+          tl.to("#section1", { duration: 3, autoAlpha: 1 })
+          // duration:2
+          tl.to("#webgl-canvas", { duration: 1.5, autoAlpha: 1 })
+          tl.to("#section1 .text .t1 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
+          tl.to("#section1 .text .t2 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
+          tl.to("#section1 .text .t3 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
+          tl.to("#section1 .text .t4 .char", { autoAlpha: 1, y: 0, stagger: 0.02 })
+          tl.to("#header", { autoAlpha: 1 })
+        }, 2000);
 
 
-          // 섹션1
-          const panel = document.querySelector("#section1");
+        // 섹션1
+        const panel = document.querySelector("#section1");
 
-          ScrollTrigger.create({
-            trigger: panel,
-            start: "top top",
-            pin: true,
+        ScrollTrigger.create({
+          trigger: panel,
+          start: "top top",
+          pin: true,
+          scrub: false,
+          pinSpacing: false
+        });
+
+        // 섹션2
+        gsap.from("#section2 .split .char", {
+          duration: 2,
+          autoAlpha: 0,
+          x: 500,
+          rotation: 360,
+          stagger: {
+            amount: 3,
+            from: "random"
+          },
+
+          scrollTrigger: {
+            trigger: "#section2",
+            start: "top 50%",
+            end: "bottom 20%",
             scrub: false,
-            pinSpacing: false
-          });
-
-          // 섹션2
-          gsap.from("#section2 .split .char", {
-            duration: 2,
-            autoAlpha: 0,
-            x: 500,
-            rotation: 360,
-            stagger: {
-              amount: 3,
-              from: "random"
-            },
-
-            scrollTrigger: {
-              trigger: "#section2",
-              start: "top 50%",
-              end: "bottom 20%",
-              scrub: false,
-              markers: false
-            }
-          });
-
-
-
-          class Stage {
-            constructor() {
-              this.renderParam = {
-                width: window.innerWidth,
-                height: window.innerHeight
-              };
-
-              this.cameraParam = {
-                fov: 70,
-                lookAt: new THREE.Vector3(0, 0, 0)
-              };
-
-              this.fogParam = {
-                color: 0x000000,
-                start: 50,
-                end: 2000
-              };
-
-              this.scene = null;
-              this.camera = null;
-              this.renderer = null;
-              this.geometry = null;
-              this.material = null;
-              this.mesh = null;
-              this.isInitialized = false;
-            }
-
-            init() {
-              this._setScene();
-              this._setRender();
-              this._setCamera();
-              this._setFog();
-
-              this.isInitialized = true;
-            }
-
-            _setScene() {
-              this.scene = new THREE.Scene();
-            }
-
-            _setRender() {
-              this.renderer = new THREE.WebGLRenderer({
-                canvas: document.getElementById("webgl-canvas"),
-                alpha: true
-              });
-              this.renderer.setPixelRatio(window.devicePixelRatio);
-              this.renderer.setSize(this.renderParam.width, this.renderParam.height);
-            }
-
-            _setCamera() {
-              const windowWidth = window.innerWidth;
-              const windowHeight = window.innerHeight;
-
-              if (!this.isInitialized) {
-                this.camera = new THREE.PerspectiveCamera(
-                  this.cameraParam.fov,
-                  this.renderParam.width / this.renderParam.height
-                );
-                this.camera.lookAt(this.cameraParam.lookAt);
-              }
-
-              this.camera.aspect = windowWidth / windowHeight;
-              this.camera.updateProjectionMatrix();
-              this.renderer.setPixelRatio(window.devicePixelRatio);
-              this.renderer.setSize(windowWidth, windowHeight);
-            }
-
-            _setFog() {
-              this.scene.fog = new THREE.Fog(
-                this.fogParam.fov,
-                this.fogParam.start,
-                this.fogParam.end
-              );
-            }
-
-            _render() {
-              let rot = 0;
-              const radian = (rot * Math.PI) / 180;
-
-              rot += 0.1;
-              this.camera.position.x = 1000 * Math.sin(radian);
-              this.camera.position.z = 1000 * Math.cos(radian);
-              this.renderer.render(this.scene, this.camera);
-            }
-
-            onResize() {
-              this._setCamera();
-            }
-
-            onRaf() {
-              this._render();
-            }
+            markers: false
           }
+        });
 
-          class Mesh {
-            constructor(stage) {
-              this.stage = stage;
-              this.mesh = null;
-            }
 
-            init() {
-              this._setMesh();
-            }
 
-            _setMesh() {
-              const vertices = [];
-              const SIZE = 3000;
-              const LENGTH = 3000;
-              const geometry = new THREE.BufferGeometry();
-              const material = new THREE.PointsMaterial({
-                color: 0xffffff
-              });
-
-              for (let i = 0; i < LENGTH; i++) {
-                const x = SIZE * (Math.random() - 0.5);
-                const y = SIZE * (Math.random() - 0.5);
-                const z = SIZE * (Math.random() - 0.5);
-
-                vertices.push(x, y, z);
-              }
-
-              geometry.setAttribute(
-                "position",
-                new THREE.Float32BufferAttribute(vertices, 3)
-              );
-
-              this.mesh = new THREE.Points(geometry, material);
-              this.stage.scene.add(this.mesh);
-            }
-
-            _render() {
-              this.mesh.rotation.y += 0.001;
-            }
-
-            onRaf() {
-              this._render();
-            }
-          }
-
-          (() => {
-            const stage = new Stage();
-            const mesh = new Mesh(stage);
-
-            stage.init();
-            mesh.init();
-
-            window.addEventListener("resize", () => {
-              stage.onResize();
-            });
-
-            const _raf = () => {
-              window.requestAnimationFrame(() => {
-                stage.onRaf();
-                mesh.onRaf();
-
-                _raf();
-              });
+        class Stage {
+          constructor() {
+            this.renderParam = {
+              width: window.innerWidth,
+              height: window.innerHeight
             };
 
-            _raf();
-          })();
-        }
+            this.cameraParam = {
+              fov: 70,
+              lookAt: new THREE.Vector3(0, 0, 0)
+            };
 
-        // section1,2,3,4 텍스트 효과
-        {
-          const hide = (item) => {
-            gsap.set(item, { autoAlpha: 0 });
+            this.fogParam = {
+              color: 0x000000,
+              start: 50,
+              end: 2000
+            };
+
+            this.scene = null;
+            this.camera = null;
+            this.renderer = null;
+            this.geometry = null;
+            this.material = null;
+            this.mesh = null;
+            this.isInitialized = false;
           }
 
-          const animate = (item) => {
-            let x = 0;
-            let y = 0;
-            let delay = item.dataset.delay;
+          init() {
+            this._setScene();
+            this._setRender();
+            this._setCamera();
+            this._setFog();
 
-            if (item.classList.contains("reveal_LTR")) {
-              x = -100,
-                y = 0
-            } else if (item.classList.contains("reveal_BTT")) {
-              x = 0,
-                y = 100
-            } else if (item.classList.contains("reveal_TTB")) {
-              x = 0,
-                y = -100
-            } else {
-              x = 100,
-                y = 0;
+            this.isInitialized = true;
+          }
+
+          _setScene() {
+            this.scene = new THREE.Scene();
+          }
+
+          _setRender() {
+            this.renderer = new THREE.WebGLRenderer({
+              canvas: document.getElementById("webgl-canvas"),
+              alpha: true
+            });
+            this.renderer.setPixelRatio(window.devicePixelRatio);
+            this.renderer.setSize(this.renderParam.width, this.renderParam.height);
+          }
+
+          _setCamera() {
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            if (!this.isInitialized) {
+              this.camera = new THREE.PerspectiveCamera(
+                this.cameraParam.fov,
+                this.renderParam.width / this.renderParam.height
+              );
+              this.camera.lookAt(this.cameraParam.lookAt);
             }
 
-            gsap.fromTo(item,
-              { autoAlpha: 0, x: x, y: y },
-              { autoAlpha: 1, x: 0, y: 0, delay: delay, duration: 1.25, overwrite: "auto", ease: "expo" }
+            this.camera.aspect = windowWidth / windowHeight;
+            this.camera.updateProjectionMatrix();
+            this.renderer.setPixelRatio(window.devicePixelRatio);
+            this.renderer.setSize(windowWidth, windowHeight);
+          }
+
+          _setFog() {
+            this.scene.fog = new THREE.Fog(
+              this.fogParam.fov,
+              this.fogParam.start,
+              this.fogParam.end
             );
+          }
+
+          _render() {
+            let rot = 0;
+            const radian = (rot * Math.PI) / 180;
+
+            rot += 0.1;
+            this.camera.position.x = 1000 * Math.sin(radian);
+            this.camera.position.z = 1000 * Math.cos(radian);
+            this.renderer.render(this.scene, this.camera);
+          }
+
+          onResize() {
+            this._setCamera();
+          }
+
+          onRaf() {
+            this._render();
+          }
+        }
+
+        class Mesh {
+          constructor(stage) {
+            this.stage = stage;
+            this.mesh = null;
+          }
+
+          init() {
+            this._setMesh();
+          }
+
+          _setMesh() {
+            const vertices = [];
+            const SIZE = 3000;
+            const LENGTH = 3000;
+            const geometry = new THREE.BufferGeometry();
+            const material = new THREE.PointsMaterial({
+              color: 0xffffff
+            });
+
+            for (let i = 0; i < LENGTH; i++) {
+              const x = SIZE * (Math.random() - 0.5);
+              const y = SIZE * (Math.random() - 0.5);
+              const z = SIZE * (Math.random() - 0.5);
+
+              vertices.push(x, y, z);
+            }
+
+            geometry.setAttribute(
+              "position",
+              new THREE.Float32BufferAttribute(vertices, 3)
+            );
+
+            this.mesh = new THREE.Points(geometry, material);
+            this.stage.scene.add(this.mesh);
+          }
+
+          _render() {
+            this.mesh.rotation.y += 0.001;
+          }
+
+          onRaf() {
+            this._render();
+          }
+        }
+
+        (() => {
+          const stage = new Stage();
+          const mesh = new Mesh(stage);
+
+          stage.init();
+          mesh.init();
+
+          window.addEventListener("resize", () => {
+            stage.onResize();
+          });
+
+          const _raf = () => {
+            window.requestAnimationFrame(() => {
+              stage.onRaf();
+              mesh.onRaf();
+
+              _raf();
+            });
           };
 
-          gsap.utils.toArray(".reveal").forEach(item => {
-            hide(item);
+          _raf();
+        })();
+      }
 
-            ScrollTrigger.create({
+      // section1,2,3,4 텍스트 효과
+      {
+        const hide = (item) => {
+          gsap.set(item, { autoAlpha: 0 });
+        }
+
+        const animate = (item) => {
+          let x = 0;
+          let y = 0;
+          let delay = item.dataset.delay;
+
+          if (item.classList.contains("reveal_LTR")) {
+            x = -100,
+              y = 0
+          } else if (item.classList.contains("reveal_BTT")) {
+            x = 0,
+              y = 100
+          } else if (item.classList.contains("reveal_TTB")) {
+            x = 0,
+              y = -100
+          } else {
+            x = 100,
+              y = 0;
+          }
+
+          gsap.fromTo(item,
+            { autoAlpha: 0, x: x, y: y },
+            { autoAlpha: 1, x: 0, y: 0, delay: delay, duration: 1.25, overwrite: "auto", ease: "expo" }
+          );
+        };
+
+        gsap.utils.toArray(".reveal").forEach(item => {
+          hide(item);
+
+          ScrollTrigger.create({
+            trigger: item,
+            start: "top bottom",
+            end: "bottom top",
+            markers: false,
+            scrub: true,
+            onEnter: () => { animate(item) }
+          });
+        });
+      }
+
+      {
+        //02. 여러개 이질감 표현하기
+        gsap.utils.toArray(".img").forEach(item => {
+          gsap.to(item, {
+            yPercent: -200,
+            ease: "none",
+            duration: 0.5,
+            scrollTrigger: {
               trigger: item,
               start: "top bottom",
               end: "bottom top",
               markers: false,
-              scrub: true,
-              onEnter: () => { animate(item) }
-            });
+              scrub: 0.5
+            }
           });
-        }
-
-        {
-          //02. 여러개 이질감 표현하기
-          gsap.utils.toArray(".img").forEach(item => {
-            gsap.to(item, {
-              yPercent: -200,
-              ease: "none",
-              duration: 0.5,
-              scrollTrigger: {
-                trigger: item,
-                start: "top bottom",
-                end: "bottom top",
-                markers: false,
-                scrub: 0.5
-              }
-            });
-          });
-        }
-      </script>
+        });
+      }
+    </script>
 </body>
 
 </html>
